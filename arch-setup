@@ -1,0 +1,13 @@
+#!/bin/bash
+pacman -Syu --noconfirm
+# Xorg
+pacman -S --needed --noconfirm xorg-fonts-encodings xorg-server xorg-server-common xorg-setxkbmap xorg-xauth xorg-xdpyinfo xorg-xkbcomp xorg-xmodmap xorg-xprop xorg-xrandr xorg-xrdb xorg-xset xorg-xsetroot xorg-xwayland
+# Desktop Environment
+pacman -S --needed --noconfirm plasma plasma-wayland-session plasma-wayland-protocols sddm kate dolphin
+systemctl enable sddm
+# Wine/Gaming
+pacman -S --needed --noconfirm wine-staging wine-gecko wine-mono winetricks vkd3d lib32-vkd3d lutris mangohud lib32-mangohud  gamemode lib32-gamemode
+#Steam
+pacman -S --needed --noconfirm steam gamescope
+3 Useful Apps
+pacman -S --needed --noconfirm flatpak qbittorrent firefox grub-customizer easyeffects corectrl audacity calf vlc
